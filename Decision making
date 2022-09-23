@@ -1,0 +1,133 @@
+#Greatest of two numbers
+a=int(input())
+b=int(input())
+if a==b:
+    print(f'{a} is equal to {b}')
+elif a>b:
+    print(f'{a} is  greater than {b}')
+else:
+    print(f'{a} is less than {b}')
+    
+#Vowels and consonants
+ch=input().lower()
+vow="aeiou"
+if (ch>='a' and ch<='z') :
+    if ch in vow:
+        print('Vowel')
+    else:
+        print('Consonant')
+else:
+    print('Not an alphabet')
+
+#Grading system
+m=int(input())
+if m>100:
+    print('Invalid Input')
+elif m>89:
+    print('A')
+elif m>79:
+    print('B')
+elif m>69:
+    print('c')
+elif m>59:
+    print('D')
+elif m>49:
+    print('E')
+elif m>-1:
+    print('F')
+else:
+    print('Invalid Input')
+    
+#Profit or Loss
+print('Enter the price of a dozen mangoes')
+x=float(input())
+print('Enter the price at which 1 mango is being sold')
+y=float(input())
+p=(y*12)-x
+r="%.2f" %p
+h=x-(y*12)
+s="%.2f" %h
+if p==0:
+    print('No profit nor loss')
+elif p>0:
+    print('Profit : Rs.',r,sep='')
+else:
+    print('Loss : Rs.',s,sep="")   
+    
+#Fee collection
+print('Enter the student type')
+s=input()
+print("Enter tuition fee")
+a=int(input())
+if s=='MSH':
+    print("Enter hostel fee")
+    b=int(input())
+elif s== 'MSDS':
+    print("Enter Bus fee")
+    b=int(input())
+elif s=='MGSDS':
+    print("Enter Bus fee")
+    b=int(input())
+    b=b+0.5*a
+elif s=='MGSH':
+    print("Enter hostel fee")
+    b=int(input())
+    b=b+0.5*a
+c=a+b
+c='%.2f' %c
+print('The fees to be paid by the student is Rs.',c,sep='')
+
+#Y2K Problem detector
+print('Enter Year of Birth')
+a=int(input())
+print('Enter Current year')
+b=int(input())
+if a>b:
+    a=-a+100+b
+else:
+    a=b-a
+print('Your age is',a)
+
+#Lab alloaction
+print('Enter x')
+l1=int(input())
+print("Enter y")
+l2=int(input())
+print("Enter z")
+l3=int(input())
+if l1<l2 and l1<l3 :
+    print('L1 has the minimal seating capacity')
+elif l2<l1 and l2<l3:
+    print('L2 has the minimal seating capacity ')
+else:
+    print('L3 has the minimal seating capacity')
+    
+#Gardening 1
+a,b,c=int(input()),int(input()),int(input())
+if a+b>c:
+    print('no')
+else:
+    print('yes')
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
